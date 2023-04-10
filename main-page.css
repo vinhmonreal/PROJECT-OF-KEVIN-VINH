@@ -1,0 +1,121 @@
+@media screen and (max-width:500 ){
+    .grid-1-right{
+        display: none;
+    }
+    .grid-2-left{
+        display: none;  
+    }
+}
+.logo{
+   width: 200px;
+   border: 2px solid black;
+}
+.nav{
+    width: 400px;
+    border: 2px solid black;    
+}
+.header{
+    display: inline;
+}
+
+
+.grid-1{
+    margin-left: 50px;
+    margin-right: 50px;   
+    display: grid;
+    grid-template-areas: 
+    'one two'
+     ;
+}
+.grid-1-right{
+    display: grid;
+    grid-area: two;    
+}
+.grid-1-left{
+    grid-area: one;   
+}
+.grid-2{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-areas:
+    '. . one one . .'
+    'two two two three three three'
+}
+
+
+.grid-2-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+}
+.grid-2-left{
+    border: 1px solid gray;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    grid-area: two;
+    padding: 40px;
+}
+.grid-2-right{
+    border: 1px solid gray;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-area: three;
+    padding: 40px;
+    background-color: rgb(59, 59, 225);
+}
+
+
+.grid-3{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-areas:
+    '. . one one . .'
+    'two two three three three three'
+}
+.grid-3-top{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+}
+.grid-3-left{
+    grid-area: two;
+    padding: 80px;
+    margin-left: 50px;
+}
+.grid-3-right{
+    border: 1px solid gray;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-area: three;
+    padding: 40px;
+    border: 1px solid gray;
+    background-color: rgb(59, 59, 225);
+}
+
+
+.footer-1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.footer-2{
+    display: flex;
+    gap: 20px;
+    justify-content: center;    
+}
+.footer{
+    height: 260px;
+    background-color: rgb(59, 59, 225);
+} 
+
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+    gap: 40px;
+}
